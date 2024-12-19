@@ -1,0 +1,52 @@
+{
+  // 编辑器配置
+  "editor.fontSize": 20, // 字体大小
+  "editor.tabSize": 2, // tab键空格配置
+  "editor.wordWrapColumn": 100, // 超过100 后换行
+  "editor.wordWrap": "bounded", // wordWrapColumn指定处这行 bounded在指定处和视宽的最小值除换行
+  "editor.minimap.enabled": true, // 缩略图模式
+  "editor.suggestSelection": "first", // 优先选中第一项代码建议
+  "editor.snippetSuggestions": "top", // 代码片段优先显示
+  "editor.formatOnSave": false, // 使用其他格式化工具时需要开启，和eslint格式化会冲突
+  "editor.bracketPairColorization.enabled": true, // 启用括号对着色
+  "editor.guides.bracketPairs": true, // 显示括号对指引线
+  "editor.renderWhitespace": "boundary", // 仅在文本边界显示空格符号
+  "editor.cursorSmoothCaretAnimation": "on", //光标平移动画
+  "editor.smoothScrolling": true, // 编辑器平滑滚动
+
+  // 工作区配置
+  "workbench.list.smoothScrolling": true, // 启用工作区列表平滑滚动
+
+  // 文件配置
+  "files.autoSave": "afterDelay", // 自动保存
+  "files.autoSaveDelay": 200,
+  "files.eol": "\n", // 统一换行符为 LF
+  "files.trimTrailingWhitespace": true, // 删除行尾空格
+  "files.insertFinalNewline": true, //文件末尾自动插入新行
+
+  // 终端配置选项
+  "terminal.integrated.fontSize": 20,
+  "terminal.integrated.cursorBlinking": true, //光标闪烁
+  "terminal.integrated.cursorStyle": "line",
+
+  // 性能优化设置
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true // 排除构建目录
+  },
+
+  // 格式化配置
+  "eslint.format.enable": true, // 启用eslint格式化
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue"
+  ], // eslint生效文件
+  // 代码保存时，自动执行ESlint格式化代码
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  }
+}
