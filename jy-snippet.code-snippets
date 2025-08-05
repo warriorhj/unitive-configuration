@@ -1,0 +1,64 @@
+{
+	"Vue template": {
+		"prefix": "vue",
+		"body": [
+			"<script lang=\"ts\" setup>",
+			"</script>",
+			"<template>",
+			"</template>",
+			"<style lang=\"scss\">",
+			"</style>",
+		],
+		"description": "simple vue template",
+	},
+	"Drawer template": {
+  "prefix": "drawer",
+  "body": [
+    "<script lang=\"ts\" setup>",
+    "",
+    "const emits = defineEmits(['update:modelValue'])",
+    "",
+    "const isCommitLoading = ref<boolean>(false)",
+    "",
+    "function handleCancel() {",
+    "  emits('update:modelValue', false)",
+    "}",
+    "",
+    "function handleCommit() {",
+    "  console.log('提交')",
+    "}",
+    "",
+    "</script>",
+    "",
+    "<template>",
+    "  <jy-drawer",
+    "    title=\"新增报修\"",
+    "    @cancel=\"handleCancel\"",
+    "  >",
+    "    <template #footer>",
+    "      <el-button @click=\"handleCancel\">",
+    "        取消",
+    "      </el-button>",
+    "      <el-button :loading=\"isCommitLoading\" type=\"primary\" @click=\"handleCommit\">",
+    "        确定",
+    "      </el-button>",
+    "    </template>",
+    "  </jy-drawer>",
+    "</template>",
+    "",
+    "<style lang=\"scss\">",
+    "</style>"
+  ],
+  "description": "drawer template"
+},
+  "Rule template": {
+  "prefix": "rule",
+  "body": [
+    "import type { InternalRuleItem } from 'async-validator'",
+    "import type { FormValidateCallback } from '@/types/global'",
+    ""
+  ],
+  "description": ""
+}
+
+}

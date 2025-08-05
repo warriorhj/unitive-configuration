@@ -1,0 +1,59 @@
+[
+  {
+    "key": "shift+c",
+    "command": "extension.showGitCommit"
+  },
+  {
+    "key": "alt+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "shift+alt+n",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+oem_2",
+    "command": "github.copilot.acceptCursorPanelSolution",
+    "when": "github.copilot.activated && github.copilot.panelVisible && activeWebviewPanelId == 'GitHub Copilot Suggestions'"
+  },
+  {
+    "key": "ctrl+oem_2",
+    "command": "-github.copilot.acceptCursorPanelSolution",
+    "when": "github.copilot.activated && github.copilot.panelVisible && activeWebviewPanelId == 'GitHub Copilot Suggestions'"
+  },
+  {
+    "key": "ctrl+oem_2",
+    "command": "-notebook.commentSelectedCells",
+    "when": "notebookEditable && notebookEditorFocused && !inputFocus"
+  },
+  {
+    "key": "ctrl+oem_2",
+    "command": "-editor.action.accessibleViewAcceptInlineCompletion",
+    "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
+  },
+  {
+    "key": "ctrl+oem_2",
+    "command": "-toggleExplainMode",
+    "when": "suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+oem_2",
+    "command": "-workbench.action.chat.attachContext",
+    "when": "inChatInput && chatLocation == 'editing-session' || inChatInput && chatLocation == 'editor' || inChatInput && chatLocation == 'notebook' || inChatInput && chatLocation == 'panel' || inChatInput && chatLocation == 'terminal'"
+  },
+  {
+    "key": "ctrl+oem_2",
+    "command": "-workbench.action.terminal.sendSequence",
+    "when": "terminalFocus"
+  }
+]
