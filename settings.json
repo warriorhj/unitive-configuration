@@ -61,6 +61,94 @@
     // "source.fixAll.stylelint": "explicit"
   },
 
+   // 设置标签页的最大显示数量
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 10,
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.scrollToSwitchTabs": true,
+    "workbench.editor.highlightModifiedTabs": true,
+
+    // 禁用预览模式，确保每个文件都打开新标签页
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+
+    // 其他标签页相关设置
+    "workbench.editor.showTabs": 'multiple',
+    "workbench.editor.tabCloseButton": "right",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.tabActionLocation": "right",
+
+    // TODO-TREE配置
+    "todo-tree.highlights.backgroundColourScheme": [
+      "red",
+      "orange",
+      "yellow",
+      "green",
+      "blue",
+      "indigo",
+      "violet",
+      ""
+    ],
+
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)",
+    "todo-tree.filtering.ignoreGitSubmodules": true,
+    "todo-tree.tree.showCountsInTree": true,
+    "todo-tree.regex.regexCaseSensitive": false,
+    "todo-tree.general.statusBar":"current file",
+    "todo-tree.general.tags": [
+      "BUG", // 代码缺陷
+      "FIXME", // 需要修复内容
+      "TODO", // 待办
+      "HACK", // 临时解决方案
+      "XXX", // 待验证
+      "TAG", // 标记
+      "DONE",
+      "NOTE", // 注释
+      "INFO", // 信息提示
+    ],
+    "todo-tree.highlights.defaultHighlight": {
+      "icon": "alert",
+      "type": "line",
+    },
+    "todo-tree.highlights.customHighlight": {
+      "BUG": {
+          "icon": "bug",
+          "foreground": "#F56C6C",
+      },
+      "FIXME": {
+          "icon": "flame",
+          "foreground": "#FF9800",
+      },
+      "TODO":{
+          "icon": "checklist",
+          "foreground": "#FFEB38",
+      },
+      "HACK":{
+          "icon": "versions",
+          "foreground": "#E040FB",
+      },
+      "XXX":{
+          "icon": "unverified",
+          "foreground": "#E91E63",
+      },
+      "TAG":{
+          "icon": "tag",
+          "foreground": "#409EFF",
+      },
+      "DONE": {
+          "icon": "verified",
+          "foreground": "#0dff00",
+      },
+      "NOTE":{
+          "icon": "note",
+          "foreground": "#67C23A",
+      },
+      "INFO":{
+          "icon": "info",
+          "foreground": "#909399",
+      },
+    },
+
   // "stylelint.validate": [
   //   "scss",
   //   "vue"
